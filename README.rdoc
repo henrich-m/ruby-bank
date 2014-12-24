@@ -1,0 +1,7 @@
+== Ruby Bank System
+
+Projeto para iniciar o aprendizado das ferramentas básicas no desenvolvimento Ruby on Rails.
+
+* Changelog:
+
+- Initial Release
