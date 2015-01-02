@@ -1,0 +1,29 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="entypo-user"></i>
+      </div>
+      <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "email" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="entypo-key"></i>
+      </div>
+      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "password" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary btn-block btn-login">
+      <i class="entypo-login"></i>
+      Log In
+    </button>
+  </div>
+
+<% end %>
+
+<%= render "devise/shared/links" %>
